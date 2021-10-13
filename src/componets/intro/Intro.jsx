@@ -6,6 +6,8 @@ export default function Intro() {
 
     const textRef  = useRef();
 
+    console.log('intro')
+
     useEffect(() => {
         init(textRef.current , {
             showCursor: true,
