@@ -1,11 +1,25 @@
 $mainColor: #15023a;
 
-$width: 768px;
+$phone: 360px;
 
-$width-x: 812px;
+$iphone: 420px;
+
+$tablet: 768px;
 
 @mixin  mobile {
-    @media (max-width: #{$width}){
+    @media (max-width: #{$phone }){
         @content 
+    }
+};
+@mixin  iphone {
+    @media (max-width: #{$iphone }){
+        @content 
+    }
+};
+
+
+@mixin tablet {
+    @media (max-width: #{$tablet }){
+        @content
     }
 }
