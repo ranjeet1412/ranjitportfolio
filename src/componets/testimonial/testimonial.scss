@@ -10,12 +10,19 @@
     justify-content: space-around;
     flex-direction: column;
   }
+  @include iphone{
+    justify-content: space-around;
+    flex-direction: column;
+  }
 
 
   h1 {
     font-size: 50px;
 
     @include mobile{
+      font-size: 20px;
+    }
+    @include iphone{
       font-size: 20px;
     }
   }
@@ -28,6 +35,10 @@
     justify-content: center;
 
     @include mobile{
+      height: 100%;
+    
+    }
+    @include iphone{
       height: 100%;
     
     }
@@ -47,6 +58,10 @@
         height: 120px;
         margin: 10px 0;
       }
+      @include iphone{
+        height: 120px;
+        margin: 10px 0;
+      }
 
       &.featured{
           width: 300px;
@@ -54,6 +69,11 @@
           margin: 0 30px;
 
           @include mobile{
+            width: 250px;
+            height: 140px;
+            margin: 1px;
+          }
+          @include iphone{
             width: 250px;
             height: 140px;
             margin: 1px;
@@ -85,6 +105,10 @@
               width: 30px;
               height: 30px;
             }
+            @include iphone{
+              width: 30px;
+              height: 30px;
+            }
           }
         }
       }
@@ -95,6 +119,10 @@
         background-color: rgb(250, 244, 245);
 
         @include mobile{
+          font-size: 12px;
+          padding: 5px;
+        }
+        @include iphone{
           font-size: 12px;
           padding: 5px;
         }
@@ -111,10 +139,16 @@
           @include mobile{
             font-size: 14px;
           }
+          @include iphone{
+            font-size: 14px;
+          }
         }
         h4{
             color: rgb(121, 115, 115);
             @include mobile{
+              font-size: 13px;
+            }
+            @include iphone{
               font-size: 13px;
             }
         }

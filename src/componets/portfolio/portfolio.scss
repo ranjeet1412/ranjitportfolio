@@ -10,6 +10,11 @@
         font-size: 50px;
         @include mobile{
             font-size: 20px;
+            font-weight: 600;
+        }
+        @include iphone{
+            font-size: 22px;
+            font-weight: 600;
         }
     }
 
@@ -23,7 +28,17 @@
             margin: 10px 0;
             flex-wrap: wrap;
             justify-content: center;
+            padding: 20px;
+            overflow: hidden;
         }
+        @include iphone{
+            margin: 10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+        
     }
 
     
@@ -39,6 +54,11 @@
 
     @include mobile{
         width: 100%;
+        padding: 25px;
+    }
+    @include iphone{
+        width: 100%;
+        padding: 25px;
     }
 
     .item{
@@ -59,6 +79,12 @@
             width: 130px;
             height: 100px;
         }
+        
+        @include iphone{
+            width: 130px;
+            height: 100px;
+        }
+
         h3{
             position: absolute;
             font-size: 20px;

@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 
   .arrow {
     height: 50px;
@@ -13,6 +14,9 @@
     cursor: pointer;
 
     @include mobile {
+      display: none;
+    }
+    @include iphone {
       display: none;
     }
 
@@ -37,6 +41,15 @@
       height: 100vh;
       flex-direction: column;
       justify-content: center;
+      left: -25px;
+      
+    }
+    @include iphone {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      left: -25px;
+      
     }
 
     .container {
@@ -58,7 +71,12 @@
         @include mobile {
           width: 80%;
           height: 150px;
-          margin: 15px 0;
+          margin: 0;
+        }
+        @include iphone {
+          width: 80%;
+          height: 150px;
+          margin: 0;
         }
 
         .left {
@@ -88,11 +106,18 @@
                 width: 20px;
                 height: 20px;
               }
+              @include iphone {
+                width: 20px;
+                height: 20px;
+              }
 
               img {
                 width: 25px;
 
                 @include mobile {
+                  width: 15px;
+                }
+                @include iphone {
                   width: 15px;
                 }
               }
@@ -104,11 +129,17 @@
               @include mobile{
                 font-size: 13px;
               }
+              @include iphone{
+                font-size: 15px;
+              }
             }
             p {
               font-size: 13px;
               color: black;
               @include mobile{
+                display: none;
+              }
+              @include iphone{
                 display: none;
               }
             }

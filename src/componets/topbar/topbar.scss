@@ -41,6 +41,10 @@
                 @include mobile{
                     display: none;
                 }
+                @include iphone{
+                    display: none;
+                }
+                
 
                 .icon {
                     font-size: 18px;
