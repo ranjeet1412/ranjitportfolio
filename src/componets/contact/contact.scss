@@ -85,8 +85,13 @@
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
-        margin: 20px;
 
+        @include mobile {
+          margin: 20px;
+        }
+        @include iphone {
+          margin: 20px;
+        }
 
         &:focus {
           outline: none;
