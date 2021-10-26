@@ -16,15 +16,15 @@
         flex: 0.5;
         overflow: hidden;
         .imgContainer{
-            width: 950px;
+            width: 700px;
             height: 700px;
             background-color: #007483;
-            border-radius: 35% 80% 35% 80%;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             flex-direction: column;
-            float: left;
+            float: right;
             
             @include mobile{
                 align-items: flex-start;
@@ -35,15 +35,15 @@
             }
             
             img{
-                height: 90%;
+                height: 120%;
 
                 @include mobile{
-                    height: 40%;
-                    margin: 0px 0px 350px 240px;
+                    height: 30%;
+                    margin: 0px -200px 0px 0px;
                 }
                 @include iphone{ 
                     height: 50%;
-                    margin: 0px 0px 340px 195px;
+                    margin: 0px 0px 350px 70px;
                     
                 }
             }

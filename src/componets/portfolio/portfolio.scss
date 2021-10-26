@@ -13,7 +13,7 @@
             font-weight: 600;
         }
         @include iphone{
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 600;
         }
     }
@@ -25,17 +25,15 @@
         display: flex;
 
         @include mobile{
-            margin: 10px 0;
+            margin: 20px 0;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
             overflow: hidden;
         }
         @include iphone{
-            margin: 10px 0;
+            margin: 20px 0;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
             overflow: hidden;
         }
         
@@ -54,11 +52,9 @@
 
     @include mobile{
         width: 100%;
-        padding: 25px;
     }
     @include iphone{
         width: 100%;
-        padding: 25px;
     }
 
     .item{
