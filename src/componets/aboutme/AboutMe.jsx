@@ -14,5 +14,5 @@ export default function AboutMe() {
                     <div className="about_right"></div>
                 </div>
             </div>
-    )``
+    )
 }   
